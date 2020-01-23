@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
+    android:elevation="8dp">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is title"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@drawable/bottombarbackdesign"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/buyernameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buyer Name : Nurul Islam"
+            android:lines="1"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_below="@+id/titleTV"/>
+        <TextView
+            android:id="@+id/sellernameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buyer Name : Nurul Islam"
+            android:layout_below="@+id/buyernameTV"
+            android:lines="1"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price : 500tk"
+            android:layout_below="@+id/sellernameTV"
+            android:padding="8dp"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

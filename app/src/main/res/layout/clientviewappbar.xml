@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        app:itemTextColor="@android:color/white"
+        app:itemIconTint="@android:color/white"
+        android:id="@+id/bottombar"
+        app:menu="@menu/clientviewmenu"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottombarbackdesign"
+        android:layout_height="56dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottombar"
+        android:id="@+id/mainframe"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

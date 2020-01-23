@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jobscontrol"
+        android:icon="@drawable/ic_jobs"
+        android:title="@string/title_jobs_control" />
+
+    <item
+        android:id="@+id/servicecontrol"
+        android:icon="@drawable/servicesall"
+        android:title="@string/title_service_control" />
+
+    <item
+        android:id="@+id/usercontrol"
+        android:icon="@drawable/ic_person_pin_black_24dp"
+        android:title="@string/title_user_control" />
+
+</menu>

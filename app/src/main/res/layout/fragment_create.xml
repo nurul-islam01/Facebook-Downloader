@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="royal.ondemandservices.ServiceCreateFragment.CreateServiceFragment">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="Home Service"
+                    android:id="@+id/home_Service_cat"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:background="@drawable/post_btn_onedesign"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="Tuition Service"
+                    android:id="@+id/tution_service"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:background="@drawable/post_btn_onedesign"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="IT and SoftwareJob"
+                    android:id="@+id/it_software_service"
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:background="@drawable/post_btn_onedesign"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_your_job"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

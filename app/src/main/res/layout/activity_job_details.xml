@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="royal.ondemandservices.JobDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bottombarbackdesign"
+                android:gravity="center"
+                android:text="Home Service Job Details"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/budgetdetaisback"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TK.5000"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:padding="5dp"
+                        android:id="@+id/budget_dtls"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Budget"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@id/budget_dtls"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layoutCall"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/budgetdetaisback"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/phone_call_dtls"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/white" />
+                    <TextView
+                        android:id="@+id/callAction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Call"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@id/phone_call_dtls"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title from server:"
+                    android:id="@+id/job_title_dtls"
+                    android:layout_margin="15dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dhanmondi R/A 32"
+                    android:id="@+id/job_address_dtls"
+                    android:layout_margin="15dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/budgetdetaisback"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Schedule:"
+                            android:textColor="@android:color/white"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Job Start Date:"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/job_start_date"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Job End Date:"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/job_end_date"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description:"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dhanmondi R/A 32"
+                    android:id="@+id/job_description_dtls"
+                    android:layout_margin="15dp"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:layout_alignParentLeft="true"
+                    android:stepSize="1.0"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/bynowTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_rate_24dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:text="Rate "
+                    android:padding="5dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/buynowbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/budgetcolor"
+                android:textColor="@android:color/white"
+                android:text="Buy Now"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

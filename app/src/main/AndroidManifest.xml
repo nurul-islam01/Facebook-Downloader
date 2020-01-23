@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="royal.ondemandservices">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:theme="@style/MyTheme"
+            android:name=".admin.AdminActivity"
+            android:label="@string/title_activity_admin"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".sellactivity.SellServiceActivity"
+            android:label="@string/title_activity_sell_service"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".sellactivity.SellJobsActivity"
+            android:label="@string/title_activity_sell_jobs"
+            android:theme="@style/MyTheme" />
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".ClientViewActivity.ClientViewHomeActivity" />
+        <activity android:name=".CreateProfielActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".JobDetailsActivity" />
+        <activity
+            android:theme="@style/MyTheme"
+            android:name=".TutionJobDetailsActivity" />
+        <activity
+            android:name=".CatActivityForJobSeeker.CatHomeServiceActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".CatActivityForJobSeeker.CatTutionServiceActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".CatActivityForJobSeeker.CatItandSoftwareJobActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".CatActivityForJobSeeker.CatActivityDetailsJobPOST.CatHomeServiceDetailsActivity" />
+        <activity android:name=".CatActivityForJobSeeker.CatActivityDetailsJobPOST.CatTuiTionServiceDetailsActivity" />
+        <activity android:name=".CatActivityForJobSeeker.CatActivityDetailsJobPOST.CatITandSoftwareServiceDetailsActivity" />
+        <activity
+            android:name=".ClientViewFragment.ClientViewJobSeekerServicesCatActivity.CatServciesHomeServiceActivity"
+            android:parentActivityName=".ClientViewActivity.ClientViewHomeActivity" />
+        <activity
+            android:name=".ClientViewFragment.ClientViewJobSeekerServicesCatActivity.CatServciesTuitionServiceActivity"
+            android:parentActivityName=".ClientViewActivity.ClientViewHomeActivity" />
+        <activity
+            android:name=".ClientViewFragment.ClientViewJobSeekerServicesCatActivity.CatServicesItandSoftwareActivity"
+            android:parentActivityName=".ClientViewActivity.ClientViewHomeActivity" />
+
+        <service android:name=".utils.GPSTracker" />
+    </application>
+
+</manifest>

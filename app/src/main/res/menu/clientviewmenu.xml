@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/allJob"
+        android:icon="@drawable/alljob"
+        android:title="Your Post"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/postjob"
+        android:icon="@drawable/services"
+        android:title="Post Job"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/servicesclient"
+        android:icon="@drawable/servicesall"
+        android:title="Services"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/selljob"
+        android:icon="@drawable/ic_sell"
+        android:title="Sell Jobs"
+        app:showAsAction="always"/>
+    <item android:id="@+id/buyservice"
+        android:icon="@drawable/ic_buy_service"
+        android:title="Buy Service"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>

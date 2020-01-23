@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/jobscontrol">
+
+    <fragment
+        android:id="@+id/jobscontrol"
+        android:name="royal.ondemandservices.admin.fragments.JobControlFragment"
+        android:label="@string/title_jobs_details"
+        tools:layout="@layout/fragment_job_control" />
+
+    <fragment
+        android:id="@+id/servicecontrol"
+        android:name="royal.ondemandservices.admin.fragments.ServiceControlFragment"
+        android:label="@string/title_service_control"
+        tools:layout="@layout/fragment_service_control" />
+
+    <fragment
+        android:id="@+id/usercontrol"
+        android:name="royal.ondemandservices.admin.fragments.UserControlFragments"
+        android:label="@string/title_user_control"
+        tools:layout="@layout/fragment_user_control_fragments" />
+</navigation>

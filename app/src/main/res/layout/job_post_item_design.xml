@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    android:background="#FFFFFF"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/job_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottombarbackdesign"
+            android:maxLines="2"
+            android:padding="7dp"
+            android:text="Job title"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="4dp"
+            android:textColor="@android:color/black"
+            android:text="Job description.we need to hire some android developer for our ongoinh project.so its important"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:id="@+id/job_description"
+            android:maxLines="5"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Post Date"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/job_post_Date"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/job_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|end"
+            android:maxLines="3"
+            android:padding="4dp"
+            android:textColor="@android:color/holo_purple"
+            android:text="Tk:500"
+            android:textAppearance="?android:textAppearanceSmall" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:padding="5dp"
+                android:stepSize="1.0" />
+
+            <TextView
+                android:id="@+id/bynowTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/ic_rate_24dp"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:text="Rate "
+                android:padding="5dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/buynowbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/budgetcolor"
+            android:textColor="@android:color/white"
+            android:text="Buy Now"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

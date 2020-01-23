@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/details">
+
+    <fragment
+        android:id="@+id/details"
+        android:name="royal.ondemandservices.sellactivity.fragments.ServiceSellingDetailsFragment"
+        android:label="@string/title_jobs_details"
+        tools:layout="@layout/activity_job_details" />
+
+    <fragment
+        android:id="@+id/chats"
+        android:name="royal.ondemandservices.sellactivity.fragments.SellServiceChattingFragment"
+        android:label="@string/title_jobs_chats"
+        tools:layout="@layout/fragment_job_chatting" />
+</navigation>

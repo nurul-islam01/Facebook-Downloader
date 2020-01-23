@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "189181378041",
+    "firebase_url": "https://ondemandservices-2c104.firebaseio.com",
+    "project_id": "ondemandservices-2c104",
+    "storage_bucket": "ondemandservices-2c104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189181378041:android:5c986316a3120c4f72d128",
+        "android_client_info": {
+          "package_name": "royal.ondemandservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189181378041-a656t94un0nd9j03d2nnh6f9mlkl3deo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "royal.ondemandservices",
+            "certificate_hash": "38e9c91024de4567d8fe42467f542c21cf60937b"
+          }
+        },
+        {
+          "client_id": "189181378041-q4kuvtvvs2nfhjf14ahvgvrn84hrscrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAll-uABnH9xMfiB2MQSOv7qKsaxM7K7NI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189181378041-q4kuvtvvs2nfhjf14ahvgvrn84hrscrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

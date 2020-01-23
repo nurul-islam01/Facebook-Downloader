@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">On Demand Services</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sell_jobs">SellJobsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_jobs_control">Jobs Control</string>
+    <string name="title_service_control">Service Control</string>
+    <string name="title_jobs_details">Job Details</string>
+    <string name="title_user_control">User Control</string>
+    <string name="title_details">Details</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_jobs_chats">Job Chats</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_sell_service">SellServiceActivity</string>
+    <string-array name="home_service_category">
+        <item>Laundry Service</item>
+        <item>Electronic Service</item>
+        <item>House To-Let Service</item>
+        <item>Interior Design</item>
+        <item>Copmputer Service</item>
+        <item>Shift and Move</item>
+    </string-array>
+    <string-array name="tution_service_category">
+        <item>Class 5 - 8</item>
+        <item>Class 1 - 10</item>
+        <item>Class 9 - 10</item>
+        <item>Class 11 - 12</item>
+        <item>ICT Subject</item>
+    </string-array>
+    <string-array name="it_service_category">
+        <item>Content Writer</item>
+        <item>MS Office</item>
+        <item>Graphics Design</item>
+        <item>Web Design</item>
+        <item>Web Development</item>
+        <item>App Development</item>
+    </string-array>
+
+    <string name="google_maps">AIzaSyBtf_gQIWb5GxTCLXWTQjeL68xUqZy2wjk</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_admin">Admin Activity</string>
+</resources>
